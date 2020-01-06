@@ -604,6 +604,7 @@ VKFAPI uint32_t vkfBytesPerPixelFromFormat(VkFormat format) {
 			return 3;
 		case VK_FORMAT_UNDEFINED:
 			return 0;
+		default: break;
 	}
 	return 0;
 }
@@ -622,6 +623,7 @@ VKFAPI uint32_t vkfBitsPerPixelFromFormat(VkFormat format) {
 			return 24;
 		case VK_FORMAT_UNDEFINED:
 			return 0;
+		default: break;
 	}
 	return 0;
 }
